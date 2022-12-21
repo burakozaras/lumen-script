@@ -1,0 +1,129 @@
+# INFOS
+print('LIGHT-LUMEN CALCULATOR BETA')
+print('---------------')
+print('EQUATIONS')
+print('a=long edge of area')
+print('b=short edge of area')
+print('h=height of area')
+print('cu=correct value from external graphic')
+print('cm=correct value from external graphic')
+print('---------------')
+
+# INPUTS
+while True:
+    try:
+        x = float(input('enter -a- value:'))
+        if x <= 0:
+            print("The value must be positive!")
+        else:
+            break
+    except ValueError:
+        print("Invalid input! Enter a valid number.")
+
+while True:
+    try:
+        y = float(input('enter -b- value:'))
+        if y <= 0:
+            print("The value must be positive!")
+        else:
+            break
+    except ValueError:
+        print("Invalid input! Enter a valid number.")
+
+while True:
+    try:
+        z = float(input('enter -h- value:'))
+        if z <= 0:
+            print("The value must be positive!")
+        else:
+            break
+    except ValueError:
+        print("Invalid input! Enter a valid number.")
+
+while True:
+    try:
+        t = float(input('enter -cu- value:'))
+        if t <= 0:
+            print("The value must be positive!")
+        else:
+            break
+    except ValueError:
+        print("Invalid input! Enter a valid number.")
+
+while True:
+    try:
+        f = float(input('enter -cm- value:'))
+        if f <= 0:
+            print("The value must be positive!")
+        else:
+            break
+    except ValueError:
+        print("Invalid input! Enter a valid number.")
+
+while True:
+    try:
+        p = float(input('enter necessary -luxofarea- value:'))
+        if p <= 0:
+            print("The value must be positive!")
+        else:
+            break
+    except ValueError:
+        print("Invalid input! Enter a valid number.")
+
+# UNIT CONVERSION
+while True:
+    print("What are the units of measurement for the dimensions of the area?")
+    print("1. Meters")
+    print("2. Feet")
+    print("3. Inches")
+    unit = input("Enter the number corresponding to the units of measurement: ")
+    if unit == "1":
+        # No conversion needed, as the values are already in meters
+        break
+    elif unit == "2":
+        x *= 0.3048  # Convert feet to meters
+        y *= 0.3048  # Convert feet to meters
+        z *= 0.3048  # Convert feet to meters
+        break
+    elif unit == "3":
+        x *= 0.0254  # Convert inches to meters
+        y *= 0.0254  # Convert inches to meters
+        z *= 0.0254  # Convert inches to meters
+        break
+    else:
+        print("Invalid input! Enter a valid number.")
+
+print('---------------')
+
+# PROCESS
+sum1 = x * y
+sum2 = (x + y) * z
+sum3 = sum1 / sum2
+
+sum4 = p * sum1
+sum5 = t * f
+sum6 = sum4 / sum5
+
+print('K point:', sum3)
+print('Ø point:', sum6, 'LUMEN')
+print('---------------')
+
+while True:
+    try:
+        m = float(input('enter lumen value of lamps:'))
+        if m <= 0:
+            print("The value must be positive!")
+        else:
+            break
+    except ValueError:
+        print("Invalid input! Enter a valid number.")
+
+print('---------------')
+
+sum7 = sum6 / m
+n = round(sum7)
+
+sum9 = n * m * t * f
+sum10 = sum9 / sum1
+print('your area has', sum10, 'exact lux value')
+
