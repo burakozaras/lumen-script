@@ -4,13 +4,13 @@ For example, if you are using a specific type of lamp, you may be able to find t
 
 To find the correct values for cu and cm, you can start by looking in the documentation or specifications for the lamps and the materials used in the area. Here are some specific steps you can follow:
 
-Locate the technical data sheet or user manual for the lamps you are using. This should contain information about the lamp's performance, including its luminous efficacy (cu) and color rendering index (cm).
+-Locate the technical data sheet or user manual for the lamps you are using. This should contain information about the lamp's performance, including its luminous efficacy (cu) and color rendering index (cm).
 
-If the technical data sheet does not provide the values for cu and cm, you can calculate them using the following formulas:
+-If the technical data sheet does not provide the values for cu and cm, you can calculate them using the following formulas:
 
 cu (luminous efficacy) = luminous flux (lumens) / power (watts)
 cm (color rendering index) = (1 / 3) * (Ra / R9) * (100 / (Ra + R9))
 where Ra is the average color rendering index for the lamp and R9 is the color rendering index for red (a reference color). 
 You can find the values for Ra and R9 in the technical data sheet or by measuring them using a spectrophotometer.
 
-To find the value for cm for the surfaces in the area, you can consult tables or charts that provide reflectance values for different materials and finishes. These can often be found in lighting design software programs or online resources such as the Illuminating Engineering Society's Lighting Handbook.
+-To find the value for cm for the surfaces in the area, you can consult tables or charts that provide reflectance values for different materials and finishes. These can often be found in lighting design software programs or online resources such as the Illuminating Engineering Society's Lighting Handbook.
